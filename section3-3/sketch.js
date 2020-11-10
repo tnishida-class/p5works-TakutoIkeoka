@@ -25,6 +25,8 @@ function isLeapYear(y){
 }
 
 function daysInYear(y){
+  return isLeapYear(y) ? 366 : 365;
+  // 「a ? b : c」と書く三項演算子を使っています
   // BLANK[1]
 }
 
