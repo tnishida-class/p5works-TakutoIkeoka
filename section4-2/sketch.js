@@ -27,11 +27,11 @@ function draw(){
   // if(y < 0){ y = height; }
 
 　// 端の処理パターン (2) 跳ね返る
-  if(x < 0 || x > width){ vx = -1 * vx; }
-  if(y > height){ vy = -1 * vy; }
-  x = constrain(x, 0, width);
-  y = constrain(y, 0, height);
-}
+//   if(x < 0 || x > width){ vx = -1 * vx; }
+//   if(y > height){ vy = -1 * vy; }
+//   x = constrain(x, 0, width);
+//   y = constrain(y, 0, height);
+// }
 
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
