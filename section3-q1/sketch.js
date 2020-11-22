@@ -4,7 +4,7 @@
 function setup(){
   createCanvas(400, 400);
   background(255);
-  balloon("I love football", 30, 30, 0, 51, 160, 20, 20);
+  balloon("I love football", 30, 30, 0, 51, 160, 10, 10);
 }
 
 function balloon(t, a, b, c, d, e, f, g){
