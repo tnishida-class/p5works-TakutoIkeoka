@@ -4,18 +4,16 @@
 function setup(){
   createCanvas(400, 400);
   background(255);
-  fill(0, 51, 160);
-  noStroke();
-  triangle(0, 0, 30, 5, 30, 15);
-  balloon("I love football");
+  balloon("I love football", 30, 30, 0, 51, 160, 20, 20);
 }
 
-function balloon(t){
+function balloon(t, a, b, c, d, e, f, g){
   let w = textWidth(t);
   let h = textAscent() + textDescent();
-  let p = 5;
-  fill(0, 51, 160);
-  rect(30, 0, w + p * 2, h + p * 2);
-  fill(255, 255, 0);
-  text(t, p + 30, h);
+  let p = a;
+  fill(c, d, e);
+  rect(a, b, w, h + 15);
+  triangle(f, g, a, b + (h + 15)/3, a, b + (h + 15) * 2/3)
+  fill(255);
+  text(t, a, h + a);
 }
